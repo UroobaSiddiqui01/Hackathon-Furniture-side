@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const BlogPage: React.FC = () => {
@@ -20,7 +21,7 @@ const BlogPage: React.FC = () => {
         <section className="md:col-span-2 space-y-6">
           {[1, 2, 3].map((post) => (
             <article key={post} className="bg-white rounded shadow overflow-hidden">
-              <img
+              <Image
                 src={`https://via.placeholder.com/870x453?text=Blog+Post+${post}`}
                 alt={`Blog Post ${post}`}
                 className="w-full h-48 object-cover"

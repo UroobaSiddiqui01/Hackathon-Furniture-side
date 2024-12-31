@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -68,13 +69,13 @@ const Footer: React.FC = () => {
   <div className="flex justify-start gap-4 mb-2"> {/* Align social icons to the right */}
     {/* Social Media Icons */}
     <a href="#" className="text-gray-600 hover:text-gray-800 transition duration-300">
-      <img src="/fb.png" alt="Facebook" className="w-6 h-6 rounded-full overflow-hidden shadow-md" />
+      <Image src="/fb.png" alt="Facebook" className="w-6 h-6 rounded-full overflow-hidden shadow-md" width={6} height={6} />
     </a>
     <a href="#" className="text-gray-600 hover:text-gray-800 transition duration-300">
-      <img src="/insta.png" alt="Twitter" className="w-6 h-6 rounded-full overflow-hidden shadow-md" />
+      <Image src="/insta.png" alt="Twitter" className="w-6 h-6 rounded-full overflow-hidden shadow-md" width={6} height={6} />
     </a>
     <a href="#" className="text-gray-600 hover:text-gray-800 transition duration-300">
-      <img src="/instag.png" alt="Instagram" className="w-6 h-6 rounded-full overflow-hidden shadow-md" />
+      <Image src="/instag.png" alt="Instagram" className="w-6 h-6 rounded-full overflow-hidden shadow-md" width={6} height={6}/>
     </a>
   </div>
   <div className="flex items-center justify-start">

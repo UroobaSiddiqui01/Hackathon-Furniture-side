@@ -1,5 +1,6 @@
 import React from 'react';
 import LogoSection from '../components/logos';
+import Image from 'next/image';
 
 const OrderCompleted: React.FC = () => {
   return (
@@ -19,10 +20,11 @@ const OrderCompleted: React.FC = () => {
       <main className="container mx-auto px-4 py-16 text-center">
         <div className="bg-white p-10 rounded shadow-lg">
           <div className="flex justify-center mb-6">
-            <img
+            <Image
               src="https://via.placeholder.com/50" 
               alt="Order Completed Icon"
               className="w-16 h-16"
+              width={20} height={20}
             />
           </div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Your Order Is Completed!</h2>
@@ -37,11 +39,11 @@ const OrderCompleted: React.FC = () => {
 
         {/* Brand Logos Section */}
         <div className="mt-12 flex justify-center space-x-6">
-          <img src="https://via.placeholder.com/100" alt="Brand 1" className="w-20" />
-          <img src="https://via.placeholder.com/100" alt="Brand 2" className="w-20" />
-          <img src="https://via.placeholder.com/100" alt="Brand 3" className="w-20" />
-          <img src="https://via.placeholder.com/100" alt="Brand 4" className="w-20" />
-          <img src="https://via.placeholder.com/100" alt="Brand 5" className="w-20" />
+          <Image src="https://via.placeholder.com/100" alt="Brand 1" className="w-20" width={20} height={20}/>
+          <Image src="https://via.placeholder.com/100" alt="Brand 2" className="w-20" width={20} height={20}/>
+          <Image src="https://via.placeholder.com/100" alt="Brand 3" className="w-20" width={20} height={20}/>
+          <Image src="https://via.placeholder.com/100" alt="Brand 4" className="w-20" width={20} height={20}/>
+          <Image src="https://via.placeholder.com/100" alt="Brand 5" className="w-20" width={20} height={20}/>
         </div>
       </main>
 

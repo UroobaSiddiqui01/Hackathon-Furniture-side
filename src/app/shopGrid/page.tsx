@@ -1,5 +1,6 @@
 import React from 'react';
 import LogoSection from "../components/logos";
+import Image from 'next/image';
 
 
 const ShopGridDefault = () => {
@@ -50,10 +51,11 @@ const ShopGridDefault = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {products.map((product, index) => (
             <div key={index} className="bg-white p-4 border rounded shadow hover:shadow-md">
-              <img
+              <Image
                 src={product.img}
                 alt={product.name}
                 className="w-full h-40 object-cover rounded mb-4"
+                width={20} height={20}
               />
               <h3 className="text-gray-800 font-medium text-lg mb-1">{product.name}</h3>
               <p className="text-sm text-gray-500">
