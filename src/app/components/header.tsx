@@ -59,24 +59,24 @@ const Header: React.FC = () => {
 
           {/* Navigation Links (Desktop) */}
           <nav className="hidden lg:flex space-x-6 text-gray-700 font-medium">
-            <a href="/" className="hover:text-purple-700">
+            <Link href="/" className="hover:text-purple-700">
               Home
-            </a>
-            <a href="aboutUs" className="hover:text-purple-700">
+            </Link>
+            <Link href="aboutUs" className="hover:text-purple-700">
               Pages
-            </a>
-            <a href="productDetails" className="hover:text-purple-700">
+            </Link>
+            <Link href="productDetails" className="hover:text-purple-700">
               Products
-            </a>
-            <a href="blogPage" className="hover:text-purple-700">
+            </Link>
+            <Link href="blogPage" className="hover:text-purple-700">
               Blog
-            </a>
-            <a href="shopList" className="hover:text-purple-700">
+            </Link>
+            <Link href="shopList" className="hover:text-purple-700">
               Shop
-            </a>
-            <a href="contactUs" className="hover:text-purple-700">
+            </Link>
+            <Link href="contactUs" className="hover:text-purple-700">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Search Box */}
@@ -104,24 +104,24 @@ const Header: React.FC = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white shadow-md">
             <nav className="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-medium">
-              <a href="/" className="hover:text-purple-700">
-                Home
-              </a>
-              <a href="aboutUs" className="hover:text-purple-700">
-                Pages
-              </a>
-              <a href="productDetails" className="hover:text-purple-700">
-                Products
-              </a>
-              <a href="blogPage" className="hover:text-purple-700">
-                Blog
-              </a>
-              <a href="shopList" className="hover:text-purple-700">
-                Shop
-              </a>
-              <a href="contactUs" className="hover:text-purple-700">
-                Contact
-              </a>
+            <Link href="/" className="hover:text-purple-700">
+              Home
+            </Link>
+            <Link href="aboutUs" className="hover:text-purple-700">
+              Pages
+            </Link>
+            <Link href="productDetails" className="hover:text-purple-700">
+              Products
+            </Link>
+            <Link href="blogPage" className="hover:text-purple-700">
+              Blog
+            </Link>
+            <Link href="shopList" className="hover:text-purple-700">
+              Shop
+            </Link>
+            <Link href="contactUs" className="hover:text-purple-700">
+              Contact
+            </Link>
             </nav>
 
             {/* Search Box (Mobile) */}

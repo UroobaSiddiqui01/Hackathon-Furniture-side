@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ShoppingCart: React.FC = () => {
@@ -29,7 +30,7 @@ const ShoppingCart: React.FC = () => {
                 {/* Example product rows */}
                 <tr className="border-t">
                   <td className="p-4 flex items-center">
-                    <img src="/shopingC1.png" alt="Product" className="w-16 h-16 rounded mr-4" />
+                    <Image src="/shopingC1.png" alt="Product" className="w-16 h-16 rounded mr-4" width={16} height={16} />
                     <span className="text-gray-800">Product Name</span>
                   </td>
                   <td className="p-4 text-center text-gray-800">$20.00</td>
