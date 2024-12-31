@@ -80,7 +80,9 @@ const Home = () => {
                 key={index}
                 className="bg-white rounded-md shadow-md overflow-hidden"
               >
-                <img src={product.img} alt={product.name} className="w-full" />
+                <Image src={product.img} alt={product.name} className="w-full"
+                width={0}
+                height={0} />
                 <div className="p-4">
                   <h3 className="text-lg font-medium text-gray-800">
                     {product.name}
