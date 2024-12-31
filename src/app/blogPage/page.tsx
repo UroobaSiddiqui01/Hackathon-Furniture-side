@@ -22,9 +22,11 @@ const BlogPage: React.FC = () => {
           {[1, 2, 3].map((post) => (
             <article key={post} className="bg-white rounded shadow overflow-hidden">
               <Image
-                src={`https://via.placeholder.com/870x453?text=Blog+Post+${post}`}
+                src={`/path-to-images/image${post}.png`}
                 alt={`Blog Post ${post}`}
                 className="w-full h-48 object-cover"
+                width={200}
+                 height={200}
               />
               <div className="p-6">
                 <h2 className="text-lg font-bold text-gray-800 mb-2">Blog Post Title {post}</h2>
